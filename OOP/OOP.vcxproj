@@ -130,10 +130,14 @@
     <ClCompile Include="OOP.cpp" />
     <ClCompile Include="PC.cpp" />
     <ClCompile Include="Point.cpp" />
+    <ClCompile Include="TypeInfo.cpp" />
+    <ClCompile Include="TypeSize.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PC.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="TypeInfo.h" />
+    <ClInclude Include="TypeSize.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

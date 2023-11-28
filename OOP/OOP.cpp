@@ -3,36 +3,42 @@
 #include <fstream>
 #include "Point.h"
 #include "PC.h"
+#include "TypeSize.h"
+#include "TypeInfo.h"
 
 
 
 using namespace std;
+
+template<typename T>
+class Printer
+{
+public:
+	void Print(T value)
+	{
+		cout << value << endl;
+	}
+};
+
+template<>
+class Printer<string>
+{
+public:
+	void Print(string value)
+	{
+		cout<<"___" << value<<"___" << endl;
+	}
+};
 
 
 int main()
 {
 	setlocale(LC_ALL, "ru");
 
-	PC pc;
-	pc.setState(PC::PCState::SLEEP);
 
-	switch (pc.getState())
-	{
-	case PC::PCState::ON:
-		cout << "Включен!" << endl;
-		break;
-	case PC::PCState::OFF:
-		cout << "Выключен!" << endl;
-		break;
-	case PC::PCState::SLEEP:
-		cout << "Спит!" << endl;
-		break;
-	default:
-		break;
-	}
+	Printer <int> p;
+		p.Print(76869);
 
-
-
-
+	return 0;
 }
 
