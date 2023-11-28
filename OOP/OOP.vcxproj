@@ -130,12 +130,14 @@
     <ClCompile Include="OOP.cpp" />
     <ClCompile Include="PC.cpp" />
     <ClCompile Include="Point.cpp" />
+    <ClCompile Include="SmartPointer.cpp" />
     <ClCompile Include="TypeInfo.cpp" />
     <ClCompile Include="TypeSize.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PC.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="SmartPointer.h" />
     <ClInclude Include="TypeInfo.h" />
     <ClInclude Include="TypeSize.h" />
   </ItemGroup>
