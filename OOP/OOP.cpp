@@ -9,8 +9,7 @@
 //#include "TypeInfo.h"
 //#include "SmartPointer.h"
 
-
-
+#include <vector>
 
 using namespace std;
 
@@ -19,7 +18,6 @@ int main()
 {
 	setlocale(LC_ALL, "ru");
 
-	List<int> lst;
 
 
 
