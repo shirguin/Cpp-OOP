@@ -10,6 +10,9 @@
 //#include "SmartPointer.h"
 
 #include <vector>
+#include <list>
+#include <forward_list>
+#include <array>
 
 using namespace std;
 
@@ -19,7 +22,8 @@ int main()
 	setlocale(LC_ALL, "ru");
 
 
-
+	array<int, 4> arr = {10,20,30,40};
+	cout << arr.at(1) << endl;
 
 	return 0;
 }
