@@ -13,17 +13,37 @@
 #include <list>
 #include <forward_list>
 #include <array>
+#include <deque>
+#include <set>
+#include <map>
+//Многопоточность
+//#include <thread>//работа с потоками
+//#include <chrono>//работа со временем
+//
+//#include <queue>
+
+#include "Sum.h"
+#include "MyClass.h"
 
 using namespace std;
+//typedef std::vector<int> int_vector;
+//typedef std::vector<float> float_vector;
 
+union MyUnion 
+{
+	short int a;
+	int b;
+	float c;
+};
 
 int main()
 {
 	setlocale(LC_ALL, "ru");
 
-
-	array<int, 4> arr = {10,20,30,40};
-	cout << arr.at(1) << endl;
+	MyUnion u;
+	u.a = 5;
+	u.b = 40000;
+	u.c = 43.54;
 
 	return 0;
 }

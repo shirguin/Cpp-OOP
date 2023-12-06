@@ -128,20 +128,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="List.cpp" />
+    <ClCompile Include="MyClass.cpp" />
     <ClCompile Include="OOP.cpp" />
     <ClCompile Include="PC.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="SmartPointer.cpp" />
+    <ClCompile Include="Sum.cpp" />
     <ClCompile Include="TypeInfo.cpp" />
     <ClCompile Include="TypeSize.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="List.h" />
+    <ClInclude Include="MyClass.h" />
     <ClInclude Include="PC.h" />
     <ClInclude Include="Point.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="SmartPointer.h" />
+    <ClInclude Include="Sum.h" />
     <ClInclude Include="TypeInfo.h" />
     <ClInclude Include="TypeSize.h" />
   </ItemGroup>
